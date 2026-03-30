@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bravo-Acuña, Nicolás</title>
+  <script src="script.js"></script>
+  <style>
+    body {
+      background-color: #fff7ed;
+      color: #100c08;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: Ubuntu, sans-serif;
+      margin: 0;
+    }
+
+    a {
+      color: #009999;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      text-decoration: none;
+    }
+
+    #header {
+      margin-left: 300px;
+      padding: 30px;
+    }
+
+    #body {
+      margin-left: 300px;
+      padding: 10px;
+    }
+
+    .info-widget {
+      position: relative;
+      width: 850px;
+      margin: 5px auto;
+      margin-top: 30px;
+      font-family: Ubuntu, mono;
+    }
+
+    .click-title {
+      background-color: transparent;
+      color: #f53e3e;
+      padding: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+
+    .click-action {
+      display: none;
+      background-color: transparent;
+      padding: 5px;
+      border: 1px solid transparent;
+      margin-top: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="header">
+    <div style="text-align: center; font-size: 42px; font-weight: bold; font-family: Ubuntu, monospace; color: #f53e3e;">NICOLÁS BRAVO ACUÑA</div>
+
+    <div style="display: flex; justify-content: center; font-size: 12px; font-family: Ubuntu, sans-serif;">
+      <div style="display: flex; gap: 5px; max-width: 550px;">
+        
+        <div id="title-column" style="flex: 1; background-color: transparent; padding: 5px; border-radius: 8px;">
+        </div>
+        
+        <div id="degree-column" style="flex: 1; background-color: transparent; padding: 5px; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+
+    <div><hr style="width:80%; max-width:600px; margin:auto; border-top:2px solid #100c08;"></div>
+  </div>
+
+  <div id="body">
+    <div class="info-widget">
+      <div class="click-title">
+        <span>Educación</span>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
+          <path d="M5 7l5 5 5-5z"/></path></svg> 
+      </div>
+    <div class="click-action">
+    <div id="education-container"></div></div>
+
+    <div class="info-widget">
+      <div class="click-title">
+        <span>Actividades de divulgación</span>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
+          <path d="M5 7l5 5 5-5z"/></path></svg> 
+      </div>
+    <div class="click-action">
+    <div id="outreach-container"></div></div>
+
+    <div class="info-widget">
+      <div class="click-title">
+        <span>Artículos científicos</span>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
+          <path d="M5 7l5 5 5-5z"/></path></svg> 
+      </div>
+    <div class="click-action">
+    <div id="papers-container"></div></div>
+
+    <div class="info-widget">
+      <div class="click-title">
+        <span>Pósteres científicos</span>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
+          <path d="M5 7l5 5 5-5z"/></path></svg> 
+      </div>
+    <div class="click-action">
+    <div id="posters-container"></div></div>
+
+    </div>
+  </div>
+
+</body>
+</html>
