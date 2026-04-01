@@ -22,17 +22,22 @@
       text-decoration: none;
     }
 
-    #header {
-      margin-left: 300px;
-      padding: 30px;
-    }
-
+    #header,
     #body {
       margin-left: 300px;
       padding: 10px;
     }
 
-    .info-widget {
+    #title-column,
+    #degree-column {
+      flex: 1;
+      background-color: transparent;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    .info-header,
+    .info-body {
       position: relative;
       width: 850px;
       margin: 5px auto;
@@ -67,24 +72,18 @@
 <body>
 
   <div id="header">
-    <div style="text-align: center; font-size: 42px; font-weight: bold; color: #f53e3e;">NICOLÁS BRAVO ACUÑA</div>
+    <div class="info-header" style="text-align: center; font-size: 42px; font-weight: bold; color: #f53e3e;">NICOLÁS BRAVO ACUÑA</div>
 
-    <div style="display: flex; justify-content: center; font-size: 12px;">
-      <div style="display: flex; gap: 5px; max-width: 550px;">
-        
-        <div id="title-column" style="flex: 1; background-color: transparent; padding: 5px; border-radius: 8px;">
-        </div>
-        
-        <div id="degree-column" style="flex: 1; background-color: transparent; padding: 5px; border-radius: 8px;">
-        </div>
-      </div>
+    <div class="info-header" style="display: flex; justify-content: center; font-size: 12px; max-width: 550px; gap: 5px">
+      <div id="title-column"></div>
+      <div id="degree-column"></div>
     </div>
 
-    <div><hr style="width:80%; max-width:600px; margin:auto; border-top:2px solid #100c08;"></div>
+    <div class="info-header"><hr style="width:80%; max-width:600px; margin:auto; border-top:2px solid #100c08;"></div>
   </div>
 
   <div id="body">
-    <div class="info-widget">
+    <div class="info-body">
       <div class="click-title">
         <span>Educación</span>
         <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
@@ -93,7 +92,7 @@
     <div class="click-action">
     <div id="education-container"></div></div>
 
-    <div class="info-widget">
+    <div class="info-body">
       <div class="click-title">
         <span>Actividades de divulgación</span>
         <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
@@ -102,7 +101,7 @@
     <div class="click-action">
     <div id="outreach-container"></div></div>
 
-    <div class="info-widget">
+    <div class="info-body">
       <div class="click-title">
         <span>Artículos científicos</span>
         <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
@@ -111,7 +110,7 @@
     <div class="click-action">
     <div id="papers-container"></div></div>
 
-    <div class="info-widget">
+    <div class="info-body">
       <div class="click-title">
         <span>Pósteres científicos</span>
         <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" style="margin-left: 8px; fill: #f53e3e; transition: transform 0.3s ease;">
