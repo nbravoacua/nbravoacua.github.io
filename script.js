@@ -148,16 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
   infoBody.forEach(infob => {
     const clickTitle = infob.querySelector('.click-title');
     const chevron = clickTitle.querySelector('.chevron');
-    const clickAction = infob.querySelector('.click-action');
+    const clickHidden = infob.querySelector('.click-hidden');
     
     clickTitle.addEventListener('click', () => {
-      const isHidden = clickAction.style.display === 'none' || clickAction.style.display === '';
+      const isHidden = clickHidden.style.display === 'none' || clickHidden.style.display === '';
       
       if (isHidden) {
-        clickAction.style.display = 'block';
+        clickHidden.style.display = 'block';
         chevron.style.transform = 'rotate(-90deg)';
       } else {
-        clickAction.style.display = 'none';
+        clickHidden.style.display = 'none';
         chevron.style.transform = 'rotate(0deg)';
       }
     });
