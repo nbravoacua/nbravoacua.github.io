@@ -145,10 +145,10 @@ fetch('posters.json')
 document.addEventListener('DOMContentLoaded', () => {
   const infoBody = document.querySelectorAll('.info-body');
   
-  infoBody.forEach(info => {
-    const clickTitle = info.querySelector('.click-title');
+  infoBody.forEach(infob => {
+    const clickTitle = infob.querySelector('.click-title');
     const chevron = clickTitle.querySelector('.chevron');
-    const clickAction = info.querySelector('.click-action');
+    const clickAction = infob.querySelector('.click-action');
     
     clickTitle.addEventListener('click', () => {
       const isHidden = clickAction.style.display === 'none' || clickAction.style.display === '';
