@@ -143,12 +143,12 @@ fetch('posters.json')
   })
 
 document.addEventListener('DOMContentLoaded', () => {
-  const widgets = document.querySelectorAll('.info-widget');
+  const infoBody = document.querySelectorAll('.info-body');
   
-  widgets.forEach(widget => {
-    const clickTitle = widget.querySelector('.click-title');
+  infoBody.forEach(info => {
+    const clickTitle = info.querySelector('.click-title');
     const chevron = clickTitle.querySelector('.chevron');
-    const clickAction = widget.querySelector('.click-action');
+    const clickAction = info.querySelector('.click-action');
     
     clickTitle.addEventListener('click', () => {
       const isHidden = clickAction.style.display === 'none' || clickAction.style.display === '';
