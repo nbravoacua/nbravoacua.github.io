@@ -60,8 +60,11 @@
 
     .chevron {
       margin-left: 5px;
-      fill: #f53e3e;
       transition: transform 0.3s ease;
+      width: 20px;
+      height: 20px;
+      viewbox: 0 0 20 20;
+      xmlns: http://www.w3.org/2000/svg;
     }
 
     @media (max-width: 900px) {
@@ -85,50 +88,54 @@
 
 <body>
   <div id="header">
+
     <div class="info-header" style="text-align: center; font-size: 42px; font-weight: bold; color: #f53e3e;">NICOLÁS BRAVO ACUÑA</div>
 
-    <div class="info-header" style="display: flex; font-size: 12px; margin-top: 5px;">
-      <div style="width: 175px;"></div>
+    <div class="info-header" style="text-align: center; font-size: 10px; margin-top: 5px;">Miembro de la Sociedad Chilena de Bioinformática desde 2025</div>
+
+    <div class="info-header" style="display: grid; grid-template-columns: 20% 30% 30% 20%; font-size: 12px; margin-top: 5px;">
+      <div></div>
       <div id="title-column"></div>
       <div id="degree-column"></div>
-      <div style="width: 175px;"></div>
+      <div></div>
     </div>
 
-    <div class="info-header" style="margin-top: 5px"><hr style="width:80%; width:600px; border-top:2px solid #100c08;"></div>
+    <div class="info-header" style="margin-top: 10px"><hr style="width:80%; width:600px; border-top:2px solid #100c08;"></div>
   </div>
 
   <div id="body">
+
     <div class="info-body">
       <div class="click-title">
         <span>Educación</span>
-        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path d="M5 7l5 5 5-5z"/></path></svg>
+        <svg class="chevron"><path d="M5 7 L10 12 L15 7" stroke="#f53e3e" stroke-width="2" fill="none"/></svg>
       </div>
       <div class="click-hidden">
-    <div id="education-container"></div></div>
+      <div id="education-container"></div></div>
 
     <div class="info-body">
       <div class="click-title">
         <span>Actividades de divulgación</span>
-        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path d="M5 7l5 5 5-5z"/></path></svg>
+        <svg class="chevron"><path d="M5 7 L10 12 L15 7" stroke="#f53e3e" stroke-width="2" fill="none"/></svg>
       </div>
       <div class="click-hidden">
-    <div id="outreach-container"></div></div>
+      <div id="outreach-container"></div></div>
 
     <div class="info-body">
       <div class="click-title">
         <span>Artículos científicos</span>
-        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path d="M5 7l5 5 5-5z"/></path></svg>
+        <svg class="chevron"><path d="M5 7 L10 12 L15 7" stroke="#f53e3e" stroke-width="2" fill="none"/></svg>
       </div>
       <div class="click-hidden">
-    <div id="papers-container"></div></div>
+      <div id="papers-container"></div></div>
 
     <div class="info-body">
       <div class="click-title">
         <span>Pósteres científicos</span>
-        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path d="M5 7l5 5 5-5z"/></path></svg>
+        <svg class="chevron"><path d="M5 7 L10 12 L15 7" stroke="#f53e3e" stroke-width="2" fill="none"/></svg>
       </div>
       <div class="click-hidden">
-    <div id="posters-container"></div></div>
+      <div id="posters-container"></div></div>
 
     </div>
   </div>
