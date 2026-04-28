@@ -70,6 +70,35 @@ a {
   xmlns: http://www.w3.org/2000/svg;
 }
 
+.gallery {
+  overflow: hidden;
+  width: 600px;
+  margin: 5px auto;
+  margin-top: 25px;
+  -webkit-mask: linear-gradient(90deg, transparent, #fff7ed 10%, #fff7ed 90%, transparent);
+  mask: linear-gradient(90deg, transparent, #fff7ed 10%, #fff7ed 90%, transparent);
+}
+
+.gallery-scroller {
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.gallery-item p{
+  color: #100c08;
+  text-align: center;
+  margin: 5px;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
 @media (max-width: 900px) {
   .sidebar {
     width: 150px !important;
