@@ -163,3 +163,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const scroller = document.querySelector('.gallery-scroller');
+  const items = document.querySelectorAll('.gallery-item');
+
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    scroller.appendChild(clone);
+  });
+});
