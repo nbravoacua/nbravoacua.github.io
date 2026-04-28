@@ -16,17 +16,17 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 250px;
   height: 100%;
   background-color: #100c08;
   color: #fff7ed;
-  padding-top: 30px;
+  padding-top: 25px;
   z-index: 50;
 }
 
 #header,
 #body {
-  margin-left: 300px;
+  margin-left: 250px;
   padding: 10px;
 }
 
@@ -41,7 +41,7 @@ a {
   position: relative;
   width: 850px;
   margin: 5px auto;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .click-title {
